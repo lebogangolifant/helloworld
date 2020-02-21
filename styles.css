@@ -1,8 +1,18 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#greetings h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 60px 0 -70px 0;
+}
+
 .time-date-wrapper {
     background-color: #333;
     padding: 25px;
-    max-width: 350px;
-    width: 100%;
+    width: 50%;
     text-align: center;
     border-radius: 5px;
     margin: 0 auto;
@@ -11,7 +21,7 @@
 
 #time {
     background-color: #333;
-    font-family: sans-serif;
+    border-radius: 5px;
     font-size: 60px;
     text-shadow: 0px 0px 1px #fff;
     color: #fff;
@@ -27,8 +37,44 @@
 }
 
 #date {
-    letter-spacing: 10px;
     font-size: 14px;
-    font-family: arial, sans-serif;
-    color: #fff;
+    margin-top: 8px;
+    color: #ec7614;
+    text-transform: uppercase;
+}
+
+@media(max-width:460px) {
+    .time-date-wrapper {
+        width: 50;
+        padding: 15px;
+    }
+
+    #greetings h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 40px;
+        margin: 30px 0 5px 0;
+    }
+
+    #time {
+        font-size: 25px;
+        color: #ec7614;
+    }
+
+    #time span {
+        color: #888;
+        text-shadow: 0px 0px 1px #333;
+        font-size: 15px;
+        position: relative;
+        top: -10px;
+        left: -2px;
+    }
+
+    #date {
+        font-size: 8px;
+        margin-top: 8px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
 }
